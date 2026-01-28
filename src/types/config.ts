@@ -324,13 +324,35 @@ export type AnnouncementConfig = {
 	};
 };
 
+// 完整的 MusicPlayerConfig 类型定义
 export type MusicPlayerConfig = {
-	enable: boolean; // 是否启用音乐播放器功能
-	mode: "meting" | "local"; // 音乐播放器模式
-	meting_api: string; // Meting API 地址
-	id: string; // 歌单ID
-	server: string; // 音乐源服务器
-	type: string; // 音乐类型
+	enable: boolean;
+	mode: "meting" | "local";
+	meting_api?: string; // 可选，因为 local 模式不需要
+	id?: string; // 可选
+	server?: string; // 可选
+	type?: string; // 可选
+	local?: {
+		audio: Array<{
+			name: string;
+			artist: string;
+			url: string;
+			cover: string;
+			lrc?: string; // 歌词可选
+		}>;
+	};
+
+	// 播放器通用设置 - 需要添加这些
+	autoplay?: boolean; // 可选，自动播放
+	volume?: number; // 可选，音量
+	loop?: "all" | "one" | "none"; // 可选，循环模式
+	order?: "list" | "random"; // 可选，播放顺序
+
+	// 可选的其他设置
+	fixed?: boolean; // 固定位置
+	mini?: boolean; // 迷你模式
+	theme?: string; // 主题颜色
+	// 根据实际需要添加其他属性
 };
 
 export type FooterConfig = {

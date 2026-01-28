@@ -42,7 +42,7 @@ let isLoading = false;
 // 是否随机播放，默认为 false
 let isShuffled = false;
 // 循环模式，0: 不循环, 1: 单曲循环, 2: 列表循环，默认为 0
-let isRepeating = 0;
+let isRepeating = 1;
 // 错误信息，默认为空字符串
 let errorMessage = "";
 // 是否显示错误信息，默认为 false
@@ -75,27 +75,11 @@ let volumeBar: HTMLElement;
 const localPlaylist = [
 	{
 		id: 1,
-		title: "ひとり上手",
-		artist: "Kaya",
-		cover: "assets/music/cover/hitori.jpg",
-		url: "assets/music/url/hitori.mp3",
+		title: "Memories of Kindness",
+		artist: "鹿乃",
+		cover: "assets/music/cover/kano_memories_of_kindness.webp",
+		url: "assets/music/url/kano_memories_of_kindness.mp3",
 		duration: 240,
-	},
-	{
-		id: 2,
-		title: "眩耀夜行",
-		artist: "スリーズブーケ",
-		cover: "assets/music/cover/xryx.jpg",
-		url: "assets/music/url/xryx.mp3",
-		duration: 180,
-	},
-	{
-		id: 3,
-		title: "春雷の頃",
-		artist: "22/7",
-		cover: "assets/music/cover/cl.jpg",
-		url: "assets/music/url/cl.mp3",
-		duration: 200,
 	},
 ];
 
@@ -230,7 +214,7 @@ function loadSong(song: typeof currentSong) {
 }
 
 // 标记是否因浏览器策略导致自动播放失败
-let autoplayFailed = false;
+let autoplayFailed = true;
 
 function handleLoadSuccess() {
 	isLoading = false;
