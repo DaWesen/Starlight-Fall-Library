@@ -12,23 +12,23 @@ export interface FriendItem {
 
 // 友情链接数据
 export const friendsData: FriendItem[] = [
-	/*{
+	{
 		id: 1,
-		title: "Astro",
-		imgurl: "https://avatars.githubusercontent.com/u/44914786?v=4&s=640",
-		desc: "The web framework for content-driven websites",
-		siteurl: "https://github.com/withastro/astro",
-		tags: ["Framework"],
+		title: "猫梦",
+		imgurl: "https://maomengblog.vercel.app/_astro/avatar.DCxqmrMX_ZDbOQJ.webp",
+		desc: "mo神的博客😍",
+		siteurl: "https://maomengblog.vercel.app/",
+		tags: ["博客"],
 	},
 	{
 		id: 2,
-		title: "Mizuki Docs",
-		imgurl: "http://q.qlogo.cn/headimg_dl?dst_uin=3231515355&spec=640&img_type=jpg",
-		desc: "Mizuki User Manual",
-		siteurl: "https://docs.mizuki.mysqil.com",
+		title: "白色季节",
+		imgurl: "https://blog.g-rinai.cn/_astro/avatar3.n4LylHtV_debry.webp",
+		desc: "cyjj😍",
+		siteurl: "https://blog.g-rinai.cn/",
 		tags: ["Docs"],
 	},
-	{
+	/*{
 		id: 3,
 		title: "Vercel",
 		imgurl: "https://avatars.githubusercontent.com/u/14985020?v=4&s=640",
