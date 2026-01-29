@@ -13,13 +13,13 @@ export interface DiaryItem {
 
 // 示例日记数据
 const diaryData: DiaryItem[] = [
-	//{
-	//	id: 1,
-	//	content:
-	//		"The falling speed of cherry blossoms is five centimeters per second!",
-	//	date: "2025-01-15T10:30:00Z",
-	//	images: ["/images/diary/sakura.jpg", "/images/diary/1.jpg"],
-	//},
+	{
+		id: 1,
+		content:
+			"今天上蓝山AI组看了第五节ai课，前面两节课看着勉强能看懂，这一节课看着一堆调用transformer和pytorch的代码有点头大...也算是有一点收获，晚上看了会暑假零零散散读了一半的的堂吉诃德",
+		date: "2026-01-29T10:30:00Z",
+		tags: ["真人真事"],
+	},
 ];
 
 // 获取日记统计数据

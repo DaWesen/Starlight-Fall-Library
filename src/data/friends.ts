@@ -26,7 +26,7 @@ export const friendsData: FriendItem[] = [
 		imgurl: "https://blog.g-rinai.cn/_astro/avatar3.n4LylHtV_debry.webp",
 		desc: "cyjj😍",
 		siteurl: "https://blog.g-rinai.cn/",
-		tags: ["Docs"],
+		tags: ["博客"],
 	},
 	/*{
 		id: 3,
